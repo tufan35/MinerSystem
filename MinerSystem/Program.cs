@@ -39,11 +39,11 @@ namespace MinerSystem
 
                 };
                 blockChain.Mine(block);
-
+                
             }
 
 
-            Console.ReadLine();
+            
             #endregion
         }
     }

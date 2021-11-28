@@ -31,6 +31,7 @@ namespace Chain
             while (true)
             {
                 blocksAdd.Nonce++;
+                blocksAdd.PreviousHah = blocks[blocks.Count - 1].Hash;
                 blocksAdd.Hash = GenerateHash(blocksAdd);
 
                 if (IsValid(blocksAdd))
